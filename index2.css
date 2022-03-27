@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+
+	background-size: cover;
+
+}
+	
+
+nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70%;
+	background: rgba(255, 99, 12, 1);
+	height: 40px;
+	border-radius: 10px;
+	animation: anim_nav linear 1s $;
+
+}
+ul{
+	width: 100%;
+}
+ul li{
+	width: 25%;
+	float: left;
+	line-height: 40px;
+	cursor: pointer;
+	list-style: none;
+	text-align: center;
+	transition: 1s;
+	font-size: 20px;
+	border-radius: 10px;
+
+}
+ul li:hover{
+	background: #561b04;
+	color: white;
+}
+section{
+	position: relative;
+	top: 100px;
+	width: 100%;
+}
+.welcome{
+	width: 600px;
+	height: 200px;
+	background: rgba(217,30,24,1);
+	margin: 0 2em;
+	animation: 2s linear 1 anim_welcom;
+	display: inline-block;
+
+}
+h1{
+	color: white;
+	text-align: center;
+	font-size: 2.5em;
+
+}
+.imgs{
+	width: 100%;
+
+}
+.imgs img{
+	width: 30%;
+	transition: 0.5%;
+	cursor: pointer;
+	border-radius: 10px;
+
+}
+.imgs img:hover{
+
+	transform: scale(1.1);
+}
+
+.coffee {
+	width: 300px;
+	height: 500px;
+	background: rgba(255,255,255, 0.5);
+	float: right;
+	margin-right: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 2.5em;
+
+
+}
+.coffee div{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.coffee img{
+	width: 150px;
+	border-radius: 10px;
+
+}
+@keyframes anim_nav{
+	0%{margin-top: -100px;opacity: 0; }
+	100%{margin-top: 0px;opacity: 1;  }
+}
+@keyframes anim_welcom{
+    0%{margin-top: 100px;opacity: 0; }
+	100%{margin-top: 0px;opacity: 1;  }
+}
+}
